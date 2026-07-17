@@ -7,7 +7,6 @@ const routes = [
     children: [
       { path: '', name: 'home', component: () => import('@/pages/IndexPage.vue') },
       { path: 'new', name: 'todo.new', component: () => import('@/pages/NewPage.vue') },
-      { path: 'note/:id', name: 'todo.show', component: () => import('@/pages/NotePage.vue') },
     ],
   },
 

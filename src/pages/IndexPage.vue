@@ -13,12 +13,7 @@
     <q-inner-loading :showing="todos.loading" />
 
     <q-list v-if="todos.todos.length" bordered separator>
-      <q-item
-        v-for="todo in todos.todos"
-        :key="todo.id"
-        clickable
-        :to="{ name: 'todo.show', params: { id: todo.id } }"
-      >
+      <q-item v-for="todo in todos.todos" :key="todo.id">
         <!-- FIX: Added a checkbox so users can click to change the status -->
         <q-item-section avatar>
           <q-checkbox
