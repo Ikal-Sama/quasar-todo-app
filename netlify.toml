@@ -1,0 +1,11 @@
+[build]
+  # Tell Netlify where Quasar outputs the static production bundle
+  publish = "dist/spa"
+  # The command Netlify should run to build your app
+  command = "npm run build"
+
+# Redirect all paths to index.html so Vue Router handles the pages
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
